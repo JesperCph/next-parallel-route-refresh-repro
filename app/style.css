@@ -1,0 +1,12 @@
+:root { font-family: system-ui, sans-serif; color: #172033; background: #f6f8fb; }
+body { max-width: 850px; margin: 32px auto; padding: 0 24px; }
+nav, .buttons { display: flex; flex-wrap: wrap; gap: 16px; }
+a { color: #184fb5; }
+button { padding: 8px 12px; cursor: pointer; }
+main { min-height: 100px; }
+aside { padding: 24px; background: #e3edff; border: 1px solid #759bd8; border-radius: 8px; }
+.document-status { font-size: 14px; color: #46546c; }
+output { font-family: monospace; }
+details { margin: 20px 0; }
+li { margin: 8px 0; }
+.example-label { font-weight: 600; }

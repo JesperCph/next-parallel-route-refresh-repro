@@ -1,0 +1,28 @@
+{
+  "name": "next-parallel-route-refresh-repro",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@11.15.1",
+  "description": "Minimal reproduction of a stale parallel-route refresh URL causing a document reload.",
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1 --port 4199",
+    "build": "next build",
+    "start": "next start --hostname 127.0.0.1 --port 4199",
+    "test": "playwright test",
+    "test:reproduce": "EXPECT_RELOAD=1 playwright test"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "dependencies": {
+    "next": "16.3.7",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.1",
+    "@types/node": "26.6.3",
+    "@types/react": "19.3.0",
+    "typescript": "7.0.2"
+  }
+}
